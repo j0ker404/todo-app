@@ -1,26 +1,21 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <Heading title="To Do"/>
     <ListContent v-bind:data="data"/>
-    <!-- {{data[2].status}} -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import Heading from './components/Header'
 import ListContent from './components/ListContent'
 
 export default {
   name: "App",
   components: {
-    // HelloWorld
       Heading,
       ListContent
   },
-  data: function() {
+  data: () => {
     return {
       data: [
         {id: 0, title: "Do task 1", status: true},

@@ -64,10 +64,10 @@ export default {
   padding: 10px;
   margin: auto 20px;
   height: auto;
-  border-style: solid;
-  border-width: 5px;
+  /* border-style: solid;
+  border-width: 5px; */
 
-  box-shadow: 5px 5px #dbceb9;
+  box-shadow: 1px 1px #dbceb9;
 }
 
 
