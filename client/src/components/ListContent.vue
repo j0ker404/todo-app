@@ -1,6 +1,9 @@
 <template>
   <div id="lsContent">
-    <ListItem v-bind:itemData="data[2]"/>
+    <!-- <ListItem v-bind:itemData="data[2]"/> -->
+    <div v-for="item in data" v-bind:key="item.id">
+        <ListItem v-bind:itemData="item"/>
+    </div>
   </div>
 </template>
 
